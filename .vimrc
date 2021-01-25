@@ -81,7 +81,7 @@ call plug#end()
 " ctags "
 """""""""
 " 親ディレクトリにあるtagsファイルを再帰的に探す
-set tags=tags
+" set tags=tags
 " Pythonのファイルを保存するたびにタグファイルを再生成する
-autocmd BufWritePost *.py silent! !ctags -R &
+" autocmd BufWritePost *.py silent! !ctags -R &
 
