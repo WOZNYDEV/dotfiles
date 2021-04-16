@@ -64,19 +64,19 @@ set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
-call plug#begin()
+" call plug#begin()
 
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
+" Plug 'prabirshrestha/async.vim'
+" Plug 'prabirshrestha/vim-lsp'
+" Plug 'prabirshrestha/asyncomplete.vim'
+" Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
-call plug#end()
+" call plug#end()
 
-if executable('pyls')
-    au User lsp_setup call lsp#register_server({
-                \'name': 'pyls',
-                \'cmd': {server_info->['pyls']},
-                \'whitelist': ['python'],
-                \})
-endif
+" if executable('pyls')
+"     au User lsp_setup call lsp#register_server({
+"                 \'name': 'pyls',
+"                 \'cmd': {server_info->['pyls']},
+"                 \'whitelist': ['python'],
+"                 \})
+" endif
